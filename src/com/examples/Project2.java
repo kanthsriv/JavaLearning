@@ -13,7 +13,7 @@ public class Project2 {
         System.out.print("Please Enter N:");
         number = Integer.parseInt(sc.next());
         int sum = 0;
-        for(int i = 1; i <= number; i++) {
+        for (int i = 1; i <= number; i++) {
           sum = sum + i;
         }
         System.out.printf("\nSum of 1 .. %d is : %d", number, sum);
