@@ -9,11 +9,11 @@ public class BillDiscount {
     System.out.println("Enter the Input Bill Amount");
     var billAmount = scanner.nextDouble();
     System.out.println("Enter the Discount Percentage ");
-    var discountPercentage = scanner.nextInt();
+    var discountPercentage = scanner.nextDouble();
     printBillDetails(billAmount, discountPercentage);
   }
 
-  private static void printBillDetails(double billAmount, int discountPercentage) {
+  private static void printBillDetails(double billAmount, double discountPercentage) {
     System.out.println("Total Bill \u20B9 :" + billAmount);
     var discountAmount = billAmount * discountPercentage / 100;
     billAmount = billAmount - discountAmount;
